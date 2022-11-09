@@ -1,0 +1,47 @@
+$border-color: black;
+
+.root {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 20px;
+  position: relative;
+  opacity: 0.35;
+  transition: all 0.2s ease-in-out;
+
+  input {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 28px;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+  }
+
+  .searchSvg {
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+
+  .clearSvg {
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+  }
+
+  &:hover {
+   opacity: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 40px 0;
+  }
+
+}
+

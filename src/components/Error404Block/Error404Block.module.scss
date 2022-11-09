@@ -1,0 +1,19 @@
+.root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+
+  &__textContainer {
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-size: 24px ;
+  }
+
+  h1 {
+    font-size: 64px;
+  }
+}

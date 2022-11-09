@@ -1,0 +1,36 @@
+@import '../variables';
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid $gray-line;
+  padding: 40px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+
+    .logoContainer {
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__description {
+    margin: 0 10px;
+    
+    p {
+      color: #7b7b7b;
+      padding: 40px 0;
+      text-align: center;
+    }
+  }
+}

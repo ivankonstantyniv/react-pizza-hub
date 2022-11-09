@@ -1,0 +1,46 @@
+$mainColor: #2b90fb;
+$animOptions: all 0.2s ease-in-out;
+
+.root {
+  ul {
+    display: inline-flex;
+
+    li {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      margin-right: 10px;
+      border: 1px solid $mainColor;
+      border-radius: 50%;
+      text-align: center;
+      color: $mainColor;
+      cursor: pointer;
+      transition: $animOptions;
+
+      &:hover {
+        background-color: $mainColor;
+        color: #fff;
+      }
+    }
+  }
+
+  .selected {
+    background-color: $mainColor;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      li {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+    
+  }
+}
